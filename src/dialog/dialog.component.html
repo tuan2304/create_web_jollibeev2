@@ -1,0 +1,15 @@
+<div class="dialog">
+  <h2 class="text-dialog" mat-dialog-title>Giỏ Hàng</h2>
+  <mat-dialog-content>
+    <div class="bar-dialog">
+      @for (item of data.cartList; track item.id) {
+        <div class="list-dialog">
+          <span class="id-list">{{item.id}}</span>
+          <img src="{{item.img}}">
+          <span class="title">{{item.title}}</span>
+          <span class="price">{{item.price}}</span>
+        </div>
+      }
+    </div>
+  </mat-dialog-content>
+  </div>

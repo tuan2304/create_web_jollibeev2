@@ -1,7 +1,60 @@
 <body>
 <div class="background-main">
   <img src="https://jollibee.com.vn/static/version1754323050/frontend/Jollibee/default/vi_VN/images/bg-top.png">
-  <img src="https://jollibee.com.vn/static/version1754323050/frontend/Jollibee/default/vi_VN/images/bg-top.png">
-</div>
+  <img src="https://jollibee.com.vn/static/version1754323050/frontend/Jollibee/default/vi_VN/images/bg-bottom.png">
+  <div class="main">
+    <div class="main-bar">
+      <div class="food-main-bar">
+        <img src="https://jollibee.com.vn//media/catalog/category/web-12_1_1.png">
+        <span>MÓN NGON PHẢI THỬ</span>
+      </div>
 
+      <div class="food-main-bar">
+        <img src="https://jollibee.com.vn//media/catalog/category/web-05_1.png">
+        <span>GÀ GIÒN VUI VẺ</span>
+      </div>
+
+      <div class="food-main-bar">
+        <img src="https://jollibee.com.vn//media/catalog/category/web-06.png">
+        <span>MÌ Ý JOLLY</span>
+      </div>
+
+      <div class="food-main-bar">
+        <img src="https://jollibee.com.vn//media/catalog/category/web-07.png">
+        <span>GÀ SỐT CAY</span>
+      </div>
+      <div class="food-main-bar">
+        <img src="https://jollibee.com.vn//media/catalog/category/cat_burger_1.png">
+        <span>BUGGER/CƠM</span>
+      </div>
+      <div class="food-main-bar">
+        <img src="https://jollibee.com.vn//media/catalog/category/phananphu.png">
+        <span>PHẦN ĂN PHỤ</span>
+      </div>
+      <div class="food-main-bar">
+        <img src="https://jollibee.com.vn//media/catalog/category/trangmieng.png">
+        <span>MÓN TRÁNG MIỆNG</span>
+      </div>
+      <div class="food-main-bar">
+        <div class="list-bar"></div>
+        <img src="https://jollibee.com.vn//media/catalog/category/thucuong.png">
+        <span>THỨC UỐNG</span>
+      </div>
+    </div>
+    <div class="main-menu">
+      @for (item of productsList; track item.id) {
+        <app-card-app class="menu" [itemInCard]="item" (addToCartEvent)="addItem($event)"></app-card-app>
+      }
+    </div>
+    <div class="buying">
+      <div class="button-buying" (click)="openDialog()">
+      <span class="material-symbols-outlined">
+shopping_bag
+      </span>
+        <span>GIỎ HÀNG</span>
+      </div>
+    </div>
+  </div>
+  <div style="height: 120px;"></div>
+</div>
 </body>

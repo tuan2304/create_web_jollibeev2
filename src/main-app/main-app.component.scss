@@ -1,0 +1,121 @@
+.background-main{
+  position: relative;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  img{
+    height:auto;
+    width: 100%;
+  }
+}
+.main{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 1850px;
+  align-items: center;
+}
+
+.main-bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-radius: 0 0 20px 20px;
+  width: 90%;
+  min-height: 147px;
+  background-color: #f4d2d6;
+  margin-bottom: 50px;
+  .food-main-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    span{
+      font-size: 12px;
+      font-weight: bolder;
+      color: black;
+    }
+
+    img{
+      max-width:120px;
+      height:auto;
+      margin-bottom: 10px;
+    }
+
+  }
+  .food-main-bar:hover{
+    img{
+      transform: scale(1.2);
+      transition: 300ms;
+    }
+    span{color: #DF1836}
+  }
+}
+.main-menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+}
+
+.menu:nth-child(1),
+.menu:nth-child(4),
+.menu:nth-child(7) {
+  border-left: none;
+}
+
+
+.menu:nth-child(3),
+.menu:nth-child(6),
+.menu:nth-child(9){
+  border-right: none;
+}
+
+
+.menu:nth-child(1),
+.menu:nth-child(2),
+.menu:nth-child(3) {
+  border-top: none;
+}
+
+.menu:nth-child(7),
+.menu:nth-child(8),
+.menu:nth-child(9) {
+  border-bottom: none;
+}
+
+.menu {
+  border-top: 2px dashed orange;
+  border-left: 2px dashed orange;
+  border-right: 2px dashed orange;
+  border-bottom: 2px dashed orange;
+}
+
+.buying{
+  width: 843px;
+  min-width: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.button-buying{
+  cursor: pointer;
+  width: 30%;
+  height: 100px;
+  border-radius: 12px;
+  .material-symbols-outlined{
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+  }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffc522;
+  span{
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
