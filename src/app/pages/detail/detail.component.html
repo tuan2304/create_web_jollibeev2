@@ -1,0 +1,16 @@
+<div class="detail-food">
+  <div class="food">
+    <div class="info-food">
+      <img src="{{ itemInCard.img }}" alt="Hình món ăn">
+      <div class="food-details">
+        <h4 class="food-title">{{ itemInCard.title }}</h4>
+        <p class="price">Giá: <strong>{{ itemInCard.price }}</strong> VND</p>
+        <p class="slogan"> <span class="material-symbols-outlined">
+fastfood
+</span> Ăn đi, ngon lắm!</p>
+        <p class="description">Tất cả những gì mà chúng tôi phải làm là mang đến những hương vị tuyệt vời trong từng món ăn, mang lại niềm vui ẩm thực cho tất cả mọi người.</p>
+        <button class="order-button" (click)="navigateToMenu()">Đặt món ngay</button>
+      </div>
+    </div>
+  </div>
+</div>

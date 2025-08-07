@@ -1,0 +1,17 @@
+<div class="cart-container">
+@for(itemCart of this.ItemServiceService.cartList; track itemCart.id){
+  <div class="menu">
+    <div class="info-menu">
+      <img src="{{itemCart.img}}" alt="">
+      <div class="menu-details">
+        <h4 class="menu-title">{{ itemCart.title }}</h4>
+        <p>Số lượng: <strong>{{ itemCart.quantity }}</strong></p>
+        <p class="price">{{ itemCart.price}}₫</p>
+      </div>
+    </div>
+  </div>
+}
+  <div class="total">
+    <p>Tổng tiền: {{getTotal(number)}}<strong>₫</strong></p>
+  </div>
+</div>

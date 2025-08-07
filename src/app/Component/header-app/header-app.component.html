@@ -6,25 +6,30 @@
       <div class="logo-header-jolliebee">
         <img src="https://jollibee.com.vn/static/version1754323050/frontend/Jollibee/default/vi_VN/images/logo.png" alt="">
       </div>
-      <div class="textbox-bottom-left-header">
-        <span class="text-bottom-left-header">TRANG CHỦ</span>
-        <span class="text-bottom-left-header">VỀ JOLLIBEE</span>
-        <span class="text-bottom-left-header" style="color: #DF1836; background-color: #f4d2d6;  border-top-left-radius: 8px; border-top-right-radius: 8px;">THỰC ĐƠN</span>
-        <span class="text-bottom-left-header">KHUYẾN MÃI</span>
-        <span class="text-bottom-left-header">DỊCH VỤ</span>
-        <span class="text-bottom-left-header">TIN TỨC</span>
-        <span class="text-bottom-left-header">CỬA HÀNG</span>
-        <span class="text-bottom-left-header">LIÊN HỆ</span>
-        <span class="text-bottom-left-header">TUYỂN DỤNG</span>
-      </div>
     </div>
   </div>
   <div class="middle-header">
     <div class="top-middle-header">
-      <img src="https://jollibee.com.vn/static/version1754323050/frontend/Jollibee/default/vi_VN/images/bg-header.png">
+      <div class="left-top-middle-header">
+        <div class="top-left-top-middle-header"></div>
+        <div class="bottom-left-top-middle-header"></div>
+      </div>
+      <div class="right-top-middle-header">
+        <img src="https://jollibee.com.vn/static/version1754323050/frontend/Jollibee/default/vi_VN/images/bg-header.png">
+      </div>
     </div>
     <div class="bottom-middle-header">
-
+      <div class="textbox-bottom-middle-header">
+        <span class="text-bottom-middle-header">TRANG CHỦ</span>
+        <span class="text-bottom-middle-header">VỀ JOLLIBEE</span>
+        <span class="text-bottom-middle-header" (click)="navigateToMenu()" >THỰC ĐƠN</span>
+        <span class="text-bottom-middle-header">KHUYẾN MÃI</span>
+        <span class="text-bottom-middle-header">DỊCH VỤ</span>
+        <span class="text-bottom-middle-header">TIN TỨC</span>
+        <span class="text-bottom-middle-header">CỬA HÀNG</span>
+        <span class="text-bottom-middle-header">LIÊN HỆ</span>
+        <span class="text-bottom-middle-header">TUYỂN DỤNG</span>
+      </div>
     </div>
   </div>
   <div class="right-header">
@@ -52,7 +57,7 @@
       </div>
     </div>
     <div class="bottom-right-header">
-      <div class="button-pick-up"><span>PICK UP</span></div>
+      <div class="button-pick-up" (click) = "navigateToCart()"><span>PICK UP</span></div>
       <img src="https://jollibee.com.vn/media/wysiwyg/delivery-lg-rs.png">
     </div>
   </div>

@@ -1,0 +1,10 @@
+<div class="list-menu" >
+  <div class="menu">
+    <div class="info-menu">
+      <img src="{{itemInCard.img}}" alt="" (click)="navigateToDetail(itemInCard.id)">
+      <span class="menu-title">{{ itemInCard.title }}</span>
+      <span class="price">{{ itemInCard.price }}₫</span>
+      <div class="buy-button" (click)="$event.stopPropagation()" (click)="addToCart()">ĐẶT HÀNG</div>
+    </div>
+  </div>
+</div>

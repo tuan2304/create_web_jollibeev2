@@ -1,4 +1,5 @@
 <body>
+<div class="main-layout">
 <div class="background-main">
   <img src="https://jollibee.com.vn/static/version1754323050/frontend/Jollibee/default/vi_VN/images/bg-top.png">
   <img src="https://jollibee.com.vn/static/version1754323050/frontend/Jollibee/default/vi_VN/images/bg-bottom.png">
@@ -42,19 +43,11 @@
       </div>
     </div>
     <div class="main-menu">
-      @for (item of productsList; track item.id) {
-        <app-card-app class="menu" [itemInCard]="item" (addToCartEvent)="addItem($event)"></app-card-app>
+      @for (item of this.itemInCard; track item.id){
+      <app-card-app class="menu" [itemInCard]="item"></app-card-app>
       }
     </div>
-    <div class="buying">
-      <div class="button-buying" (click)="openDialog()">
-      <span class="material-symbols-outlined">
-shopping_bag
-      </span>
-        <span>GIỎ HÀNG</span>
-      </div>
     </div>
   </div>
-  <div style="height: 120px;"></div>
 </div>
 </body>

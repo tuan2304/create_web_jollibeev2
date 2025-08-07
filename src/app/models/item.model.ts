@@ -1,6 +1,7 @@
 export interface ItemModel{
-  id: number;
+  id: string;
   img: string;
   title: string;
-  price: string;
+  price: number;
+  quantity: number;
 }
